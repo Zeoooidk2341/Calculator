@@ -1,0 +1,103 @@
+
+Console.ForegroundColor = ConsoleColor.Green; // console
+
+Console.WriteLine("enter a random number boy");
+
+Console.ForegroundColor = ConsoleColor.White; // person
+
+String input = Console.ReadLine();
+
+int number1 = Convert.ToInt32(input);
+
+Console.ForegroundColor = ConsoleColor.Green; // console
+
+
+Console.WriteLine("what do you want to do with that number?"); // the Sign like x or /
+Console.WriteLine("for Multiplication do X or x and divideds do /");
+Console.WriteLine("for squareroots do root and for squaring do square or squared");
+
+Console.ForegroundColor = ConsoleColor.White; // person
+
+
+String input_variable = Console.ReadLine();
+
+if (input_variable == "square")
+{
+    int result = number1 * number1;
+    Console.ForegroundColor = ConsoleColor.Green; // console
+
+    Console.WriteLine(result);
+}
+else if (input_variable == "squared")
+{
+    int result = number1 * number1;
+    Console.WriteLine(result);
+}
+
+else if (input_variable == "root")
+{
+    double result = Math.Sqrt(number1);
+    Console.WriteLine(result);
+
+}
+
+else
+{
+
+    Console.ForegroundColor = ConsoleColor.Green; // console
+
+
+    Console.WriteLine("and the next number"); // the 2nd number they chose to multiply or divided the first
+
+    Console.ForegroundColor = ConsoleColor.White; // person
+
+
+    string input_2 = Console.ReadLine();
+
+    int number2 = Convert.ToInt32(input_2);  // the 2nd number they chose to multiply or divided the first
+
+    Console.ForegroundColor = ConsoleColor.Green; // console
+
+
+    Console.WriteLine(input + " " + input_variable + " " + input_2 + " ="); // calc as youd write it
+
+    if (input_variable == "x")
+    {
+        int result = number1 * number2; // actule calc for the computer
+        Console.WriteLine(result);
+    }
+
+    else if (input_variable == "X")
+    {
+        int result = number1 * number2; // actule calc for the computer
+        Console.WriteLine(result);
+    }
+
+    if (input_variable == "/")
+    {
+        int result = number1 / number2; // actule calc for the computer
+        Console.WriteLine(result);
+    }
+
+    if (input_variable == "+")
+    {
+        int result = number1 + number2; // actule calc for the computer
+        Console.WriteLine(result);
+    }
+
+    if (input_variable == "-")
+    {
+        int result = number1 - number2; // actule calc for the computer
+        Console.WriteLine(result);
+    }
+
+    else if (input_variable == "_")
+    {
+        int result = number1 - number2; // actule calc for the computer
+        Console.WriteLine(result);
+    }
+
+}
+
+
+
